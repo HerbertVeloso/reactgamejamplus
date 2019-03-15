@@ -1,0 +1,103 @@
+$normalTransparentBox: 480px;
+$mediumTransparentBox: 360px;
+$smallTransparentBox: 240px;
+
+.transparentBox{
+    width: $normalTransparentBox;
+    padding: 48px 32px;
+    background: rgba(130, 70, 100, .7);
+    color: $branco;
+    position: relative;
+
+    &:after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(130, 70, 100, .7);
+        position: absolute;
+        left: 24px;
+        top: 24px;
+        z-index: 2;
+    }
+
+    .title{
+        position: relative;
+        z-index: 5;
+    }
+
+    h2{
+        margin-top: 32px;
+        font-size: 32px;
+        font-family: $fontBold;
+        position: relative;
+        z-index: 5;
+    }
+
+    p{
+        font-size: 28px;
+        position: relative;
+        z-index: 5;
+
+        span{
+            margin-left: 6px;
+            font-family: $fontBold;            
+        }
+    }
+ }
+
+ @media (max-width: 768px){
+    .transparentBox{
+        width: $mediumTransparentBox;
+        padding: 48px 32px;
+    
+        .title{
+            &:after{
+                font-size: 48px;
+                line-height: 48px;
+                top: calc(50% - 8px);
+                left: -32px;
+            }
+        }
+
+        h2{
+            font-size: 28px;
+        }
+    
+        p{
+            font-size: 24px;
+        }
+     }
+ }
+
+ @media (max-width: 425px){
+    .transparentBox{
+        width: $smallTransparentBox;
+        padding: 32px 28px;
+    
+        &:after{
+            left: 16px;
+            top: 16px;
+        }
+
+        .title{
+            &:after{
+                font-size: 32px;
+                line-height: 32px;
+                top: calc(50% - 16px);
+                left: -26px;
+            }
+            h2{
+                margin: 0;
+            }
+        }
+
+        h2{
+            margin-top: 32px;
+            font-size: 18px;
+        }
+    
+        p{
+            font-size: 18px;
+        }
+     }
+ }

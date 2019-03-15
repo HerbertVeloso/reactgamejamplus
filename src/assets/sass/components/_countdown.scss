@@ -1,0 +1,108 @@
+.countdown{
+    padding: 64px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        margin-bottom: 32px;
+        font-size: 48px;
+        font-family: $fontBold;
+        color: $azul;
+        text-transform: uppercase;
+    }
+
+    .countdown__container{
+        width: 100%;
+        background: linear-gradient(to right, $verde 50%, $azul 51%);
+        display: flex;
+        justify-content: center;
+
+        .container{
+            display: flex;
+
+            div{
+                width: 25%;
+                padding: 48px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: $branco;
+
+                span{
+                    font-size: 72px;
+                    font-family: $fontBold;
+                    line-height: 50px;
+                    margin-bottom: 12px;
+                }
+
+                p{
+                    font-size: 12px;
+                    text-transform: uppercase;
+                }
+            }
+
+            div:nth-child(){
+                background: $verde;
+            }
+            div:nth-child(2){
+                background: $verdeGT;
+            }
+            div:nth-child(3){
+                background: $azulGT;
+            }
+            div:nth-child(4){
+                background: $azul;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .countdown{    
+        h1{
+            font-size: 40px;
+        }
+    
+        .countdown__container{
+            .container{
+                div{
+                    padding: 32px 0;
+    
+                    span{
+                        font-size: 56px;
+                        line-height: 48px;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    .countdown{   
+        padding: 32px 0;
+         
+        h1{
+            margin-bottom: 16px;
+            font-size: 22px;
+        }
+    
+        .countdown__container{
+            .container{
+                padding: 0;
+
+                div{
+                    padding: 16px 0;
+    
+                    span{
+                        font-size: 32px;
+                        font-family: $fontBold;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+}

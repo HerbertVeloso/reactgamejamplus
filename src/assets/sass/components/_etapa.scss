@@ -1,0 +1,25 @@
+.etapa{
+    width: 100%;
+    margin: 64px 0;
+    padding: 64px 0;
+
+    .container{
+        color: $branco;
+
+        .etapa__text{
+            margin-top: 32px;
+            font-size: 18px;
+            text-indent: 48px;
+            text-align: justify;
+            text-transform: uppercase;
+        }
+        ul{
+            margin-top: 24px;
+            li{
+                margin-top: 4px;
+                font-size: 18px;
+                font-family: $fontBold;
+            }
+        }
+    }
+}

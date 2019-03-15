@@ -1,0 +1,14 @@
+@font-face{
+    font-family: 'Panton-Black';
+    font-style: normal;
+    src: url('../fonts/Panton-BlackCaps.otf') format("opentype");
+}
+
+@font-face{
+    font-family: 'Panton-Light';
+    font-style: normal;
+    src: url('../fonts/Panton-LightCaps.otf') format("opentype");
+}
+
+$fontBold: 'Panton-Black';
+$fontLight: 'Panton-Light';

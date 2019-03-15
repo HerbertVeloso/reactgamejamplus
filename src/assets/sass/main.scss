@@ -1,0 +1,21 @@
+// core
+@import 'core/fonts';
+@import 'core/colors';
+@import 'core/reset';
+@import 'core/global';
+@import 'core/grid';
+
+// components
+@import 'components/navbar';
+@import 'components/countdown';
+@import 'components/contact';
+@import 'components/form';
+@import 'components/etapa';
+@import 'components/footer';
+@import 'components/modal';
+
+// helpers
+@import 'helpers/title';
+@import 'helpers/card';
+@import 'helpers/faqBox';
+@import 'helpers/transparentBox';

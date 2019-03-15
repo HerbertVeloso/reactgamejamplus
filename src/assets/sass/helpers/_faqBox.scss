@@ -1,0 +1,28 @@
+.faqBox{
+    .container{
+        padding: 48px 20px 32px;
+    }
+
+    .faqBox__content{
+        min-height: 600px;
+        
+        .container{
+            padding: 64px 20px;
+
+            div{
+                width: 100%;
+                max-width: 480px;
+                background: $azulTransparencia;
+                padding: 48px;
+    
+                p{
+                    font-size: 18px;
+                    color: $branco;
+                    text-align: justify;
+                    text-indent: 32px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.title{
+    margin-left: 48px;
+    color: $azul;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+
+    &:after{
+        content: "+";
+        font-family: $fontBold;
+        font-size: 64px;
+        line-height: 64px;
+        position: absolute;
+        top: calc(50% - 32px);
+        left: -48px;
+    }
+
+    h2{
+        font-size: 32px;
+        font-family: $fontBold;
+    }
+
+    p{
+        font-size: 28px;
+    }
+}
+
+.title--inverse{
+    margin-right: 48px;
+    color: $azul;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+
+    &:after{
+        content: "+";
+        font-family: $fontBold;
+        font-size: 64px;
+        line-height: 64px;
+        position: absolute;
+        top: calc(50% - 32px);
+        right: -48px;
+    }
+
+    h2{
+        font-size: 32px;
+        font-family: $fontBold;
+        text-align: end;
+    }
+
+    p{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 485px){
+    .title{
+        margin-left: 32px;
+    
+        &:after{
+            font-size: 48px;
+            line-height: 48px;
+            top: calc(50% - 24px);
+            left: -32px;
+        }
+    
+        h2{
+            font-size: 24px;
+        }
+    
+        p{
+            font-size: 20px;
+        }
+    }
+    .title--inverse{
+        margin-right: 32px;
+    
+        &:after{
+            font-size: 48px;
+            line-height: 48px;
+            top: calc(50% - 24px);
+            right: -32px;
+        }
+    
+        h2{
+            font-size: 24px;
+        }
+    
+        p{
+            font-size: 20px;
+        }
+    }
+}
