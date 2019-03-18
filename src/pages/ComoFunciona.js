@@ -1,8 +1,6 @@
 import React from 'react';
 
-import Navbar from '../components/Navbar';
 import Etapa from '../components/Etapa';
-import Footer from '../components/Footer';
 
 import Title from '../helpers/Title';
 
@@ -79,50 +77,46 @@ export default class ComoFunciona extends React.Component {
   
   render() {
     return (
-      <div>
-        <Navbar />
-        <main>
-          <section className="container comoFunciona">
-            <Title titulo={this.language().titulo} subtitulo={this.language().subtitulo} />
-            <div class="timeline">
-                <img src={timeline} alt="Timeline de todas as etapas da Game Jam +" />
-                <a href="#firstStage" class="linkFirst"></a>
-                <a href="#voteStage" class="linkVote"></a>
-                <a href="#secondStage" class="linkSecond"></a>
-                <a href="#finalStage" class="linkFinals"></a>
-            </div>
-          </section>
-          <Etapa 
-            id="firstStage"
-            fundo={ bgGJ }
-            titulo={this.language().etapa1.titulo}
-            subtitulo={this.language().etapa1.subtitulo}
-            texto={this.language().etapa1.texto}
-          />
-          <Etapa 
-            id="voteStage"
-            fundo={ bgVotoPopular }
-            titulo={this.language().voto.titulo}
-            texto={this.language().voto.texto}
-          />
-          <Etapa 
-            id="secondStage"
-            fundo={ bgAceleracao }
-            titulo={this.language().etapa2.titulo}
-            subtitulo={this.language().etapa2.subtitulo}
-            texto={this.language().etapa2.texto}
-          />
-          <Etapa 
-            id="finalStage"
-            fundo={ bgFinal }
-            titulo={this.language().etapa3.titulo}
-            subtitulo={this.language().etapa3.subtitulo}
-            texto={this.language().etapa3.texto}
-            lista={this.language().etapa3.lista}
-          />
-        </main>
-        <Footer />
-      </div>
+      <main>
+        <section className="container comoFunciona">
+          <Title titulo={this.language().titulo} subtitulo={this.language().subtitulo} />
+          <div class="timeline">
+              <img src={timeline} alt="Timeline de todas as etapas da Game Jam +" />
+              <a href="#firstStage" class="linkFirst"></a>
+              <a href="#voteStage" class="linkVote"></a>
+              <a href="#secondStage" class="linkSecond"></a>
+              <a href="#finalStage" class="linkFinals"></a>
+          </div>
+        </section>
+        <Etapa 
+          id="firstStage"
+          fundo={ bgGJ }
+          titulo={this.language().etapa1.titulo}
+          subtitulo={this.language().etapa1.subtitulo}
+          texto={this.language().etapa1.texto}
+        />
+        <Etapa 
+          id="voteStage"
+          fundo={ bgVotoPopular }
+          titulo={this.language().voto.titulo}
+          texto={this.language().voto.texto}
+        />
+        <Etapa 
+          id="secondStage"
+          fundo={ bgAceleracao }
+          titulo={this.language().etapa2.titulo}
+          subtitulo={this.language().etapa2.subtitulo}
+          texto={this.language().etapa2.texto}
+        />
+        <Etapa 
+          id="finalStage"
+          fundo={ bgFinal }
+          titulo={this.language().etapa3.titulo}
+          subtitulo={this.language().etapa3.subtitulo}
+          texto={this.language().etapa3.texto}
+          lista={this.language().etapa3.lista}
+        />
+      </main>
     );
   }
 }

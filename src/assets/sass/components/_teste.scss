@@ -1,0 +1,231 @@
+.teste{
+    width: 100%;
+    background: $azul;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    .container{
+        height: 82px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            width: 54px;
+        }
+
+        #teste__toggle{
+            display: none;
+        }
+
+        .teste__toggle{
+            display: none;
+        }
+
+        ul{
+            position: relative;
+
+            li{
+                position: relative;
+                margin: 0 8px;
+                float: left;
+
+                .menu__span{
+                    padding: 12px 0;
+                    background: $azul;
+                    font-size: 16px;
+                    color: $branco;
+                    text-align: center;
+                    text-transform: uppercase;
+                    display: block;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: $verde;
+                    }
+                }
+                .menu__link{
+                    padding: 12px 0;
+                    background: $azul;
+                    font-size: 16px;
+                    color: $branco;
+                    text-align: center;
+                    text-transform: uppercase;
+                    display: block;
+                    position: relative;
+                    transition: all .5s;
+                    cursor: pointer;
+
+
+                    &::after{
+                        content: "";
+                        width: 100%;
+                        height: 3px;
+                        background: $verde;
+                        position: absolute;
+                        bottom: 6px;
+                        left: 0;
+                        opacity: 0;
+                        transition: all .5s;
+                    }
+
+                    &:hover{
+                        color: $verde;
+
+                        &::after{
+                            opacity: 1;
+                        }
+                    }
+                    
+                    &.active{
+                        &::after{
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                &:hover ul{
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+                ul{
+                    width: 100%;
+                    position: absolute;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: visibility 0s, opacity 0.3s linear;
+                    
+                    li{
+                        float: none;
+                        margin: 0;
+                        
+                        .menu__link{
+                            padding: 12px 0;
+    
+                            &:after {
+                                bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 768px){
+    .teste{
+        .container{
+            .teste__toggle{
+                width: 40px;
+                height: 40px;
+                border: 1.5px solid $verde;
+                border-radius: 50%;
+                display: block;
+                position: relative;
+    
+                div{
+                    width: 20px;
+                    height: 2px;
+                    margin: 3px 0;
+                    background: $verde;
+                    border-radius: 6px;
+                    position: absolute;
+                    left: calc(50% - 10px);
+                    transition: all .3s;
+                }
+
+                div:nth-child(1){
+                    top: 7px;
+                }
+                div:nth-child(2){
+                    top: 15px;
+                }
+                div:nth-child(3){
+                    top: 23px;
+                }
+            }
+
+            ul{
+                width: 100%;
+                height: 0;
+                background: $azul;
+                padding: 0;
+                display: block;
+                position: absolute;
+                top: 82px;
+                left: 0;
+                transition: height .5s, padding .5s;
+                overflow: hidden;
+
+                li{
+                    width: 100%;
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    float: none;
+                    border-top: 1px solid $verde;
+                    display: flex;
+                    flex-direction: column;
+
+                    .menu__span{
+                        padding: 18px 0;
+                    }
+                    .menu__link{
+                        padding: 18px 0;
+                        
+                        &::after{
+                            bottom: 3px;
+                        }
+                    }
+
+                    &:hover{
+                        ul{
+                            height: auto;
+                            max-height: 200px;
+                        }
+                    }
+
+                    ul{
+                        position: static;
+                        overflow: hidden;
+                        max-height: 0;
+                        transition: all .5s;
+                        
+    
+                        li{
+                            .menu__link{
+                                padding: 24px 0;
+                                background: $azulGT;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.open{
+    .container{
+        .teste__toggle{
+            div:nth-child(1){
+                top: 15px;
+                transform: rotate(45deg);
+            }
+            div:nth-child(2){
+                left: 15px;
+                opacity: 0;
+            }
+            div:nth-child(3){
+                top: 15px;
+                transform: rotate(-45deg);
+            }
+        }
+         ul{
+            height: 380px;
+            // padding: 24px 0;
+        }
+    }
+}

@@ -1,8 +1,6 @@
 import React from 'react';
 
 // Components
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import Modal from '../components/Modal';
 
 // Helpers
@@ -24,21 +22,24 @@ import khelson from '../assets/images/organizadores/2019/KhelsonBelem.jpg'
 import pamela from '../assets/images/organizadores/2019/PamelaCuritiba.jpg'
 import danilo from '../assets/images/organizadores/2019/DaniloTeresina.jpg'
 import gustavo from '../assets/images/organizadores/2019/GustavoGoiania.jpg'
-import danielRecife from '../assets/images/organizadores/2019/DanielRecife.png'
+import danielRecife from '../assets/images/organizadores/2019/DanielRecife.jpg'
 import caio from '../assets/images/organizadores/2019/CaioUberaba.jpg'
 import felipe from '../assets/images/organizadores/2019/FelipePatosDeMinas.jpg'
 import narto from '../assets/images/organizadores/2019/NartoNatal.jpg'
 import helen from '../assets/images/organizadores/2019/HelenRondonia.jpg'
-import lucasBrasilia from '../assets/images/organizadores/2019/LucasBrasilia.jpeg'
+import lucasBrasilia from '../assets/images/organizadores/2019/LucasBrasilia.jpg'
 import gabrielAndradeBrasilia from '../assets/images/organizadores/2019/GabrielAndradeBrasilia.jpg'
-import isaacBrasilia from '../assets/images/organizadores/2019/IsaacBrasilia.jpeg'
+import isaacBrasilia from '../assets/images/organizadores/2019/IsaacBrasilia.jpg'
 import gabrielMotaBrasilia from '../assets/images/organizadores/2019/GabrielMotaBrasilia.jpg'
-import guilhermeBrasilia from '../assets/images/organizadores/2019/GuilhermeBrasilia.jpeg'
-import rodrigoBrasilia from '../assets/images/organizadores/2019/RodrigoBrasilia.jpeg'
+import guilhermeBrasilia from '../assets/images/organizadores/2019/GuilhermeBrasilia.jpg'
+import rodrigoBrasilia from '../assets/images/organizadores/2019/RodrigoBrasilia.jpg'
 import filipeCaruaru from '../assets/images/organizadores/2019/FilipeCaruaru.jpg'
 import arisonFortaleza from '../assets/images/organizadores/2019/ArisonFortaleza.jpg'
 import italoFortaleza from '../assets/images/organizadores/2019/ItaloFortaleza.jpg'
 import anayaSaoCarlos from '../assets/images/organizadores/2019/AnayaSaoCarlos.jpg'
+import kidManaus from '../assets/images/organizadores/2019/KidManaus.jpg'
+import carlosManaus from '../assets/images/organizadores/2019/CarlosManaus.jpg'
+import johnManaus from '../assets/images/organizadores/2019/JohnManaus.jpg'
 
 //Fotos Regional 2018
 import pedrozambon from '../assets/images/organizadores/2018/pedro.jpg'
@@ -83,12 +84,12 @@ export default class Organizers extends React.Component {
                     }, {
                         nome: "Gabriel Ferreira",
                         pt: "Gabriel Ferreira é gerente de comunidade e responsável pelo marketing da Gamer Trials desde 2017. Apaixonado pela ideia de criar comunidades engajadas e sadias, vem trabalhando em diversos projetos na área de jogos: é um dos representantes do coletivo RING, representante do Unity User Group no Rio de Janeiro e moderador do grupo Indie Game MKT, dentre outras iniciativas. Publicitário formado e pós-graduado em marketing, Gabriel procura utilizar seus conhecimentos para ajudar a indústria a crescer de maneira saudável.",
-                        en: "",
+                        en: `Gabriel Ferreira is our community manager and the one responsible for Gamer Trial's Marketing since 2017. Driven to the idea of creating healthy and engaged communities, Gabriel has been working in many projects in the game industry: he's one of the representatives and organizers of the RING Colective, a Unity User Group organizer in Rio de Janeiro and the moderator of the group "Indie Game MKT", and many more. Graduated in advertising and a marketing post-graduate, Gabriel is always looking for ways to help the developer community grow in a healthy way.`,
                         foto: gabriel
                     }, {
                         nome: "Pedro Teixeira",
                         pt: "Pedro Teixeira atualmente é um dos organizadores nacionais da Game Jam Plus e já desenvolveu produtos nas áreas de gestão de comunidade e experiência do usuário na Startup Gamer Trials. Fomenta a comunidade de devs brasileira com o canal do Discord Game Designers BR e participação no coletivo de devs do RJ, o RING. Também desenvolve jogos digitais, sendo um deles selecionado para o programa Startup Rio 2019.",
-                        en: "",
+                        en: "Pedro Teixeira is currently one of the national organizers of Game Jam Plus and has already developed products in the areas of community management and user experience in Startup Gamer Trials. It promotes the Brazilian devs community with the Discord Game Designers BR channel and participation in the RJ devs collective, RING. Also, it develops digital games, being one of them selected for the program Startup Rio 2019.",
                         foto: pedro
                     }
                 ],
@@ -231,6 +232,24 @@ export default class Organizers extends React.Component {
                         pt: "Anayã Ferreira, jogadora desde sempre, game dev desde 2013. Estudante de Ciências da Computação na USP de São Carlos, já participou de diversas Game Jams e projetos de jogos, incluindo alguns que foram premiados. Hoje tem seu estúdio, a Batatando Games, onde busca desenvolver experiências interessantes e divertidas.",
                         en: "Anayã Ferreira, gamer since ever, game dev since 2013. Computer Science student at USP-São Carlos, has already participated in many game jams and projects, some of those awarded. Today is one of the founders of Batatando Games, a studio aiming to create meaningful and fun experiences to its players.",
                         foto: anayaSaoCarlos
+                    }, {
+                        nome: "Kid Mendes",
+                        cidade: "Manaus",
+                        pt: "Graduando em Sistemas de Informação pela Universidade do Estado do Amazonas, possui mais de dois anos de experiência com desenvolvimento na área de jogos, já trabalhou em projetos envolvendo Realidade Aumentada, Realidade Virtual e a integração de modelos de Inteligência Artificial em jogos. Atualmente compõe o time técnico do Samsung Ocean Center em Manaus, como desenvolvedor na área de Jogos Digitais.",
+                        en: "Graduating in Information Systems at the State University of Amazonas, he has more than two years of games experience, has worked on projects involving Augmented Reality, Virtual Reality and the integration of Artificial Intelligence models in games. He currently composes the technical team of the Samsung Ocean Center in Manaus, as a developer in the area of Digital Games.",
+                        foto: kidManaus
+                    }, {
+                        nome: "Carlos Tapudima",
+                        cidade: "Manaus",
+                        pt: "Sou um Acadêmico de Sistemas de Informação na Universiadade Estadual do Amazonas, formado Técnico em Informática pelo Instituto Federal do Amazonas. Já tive experiência com as linguagens Python, Delphi, Java, JavaScript, C e C++. Atualmente realizo a manutenção de um jogo educativo utilizado em sala de aula pelos cursos de Medicina, Farmácia e Enfermagem na Universidade Estadual do Amazonas.",
+                        en: "I am an academic in the Information Systems course from the Amazon State University and a Computer Techniciann graduated by Amazon State Federal Institute. In regards of programming languages I have  knowledge and experience in python, delphi, java,javascript  c and c++. Currently I'm giving support to an educational game mostly used on class rooms by the state university of amazon, in the Pharmacy, Medicine and Nursing courses.",
+                        foto: carlosManaus
+                    }, {
+                        nome: "Jonh Silva",
+                        cidade: "Manaus",
+                        pt: "Designer com 5 anos de experiência, participa de projetos de desenvolvimento de jogos e aplicativos móveis, além de trabalhos de ilustração e animação digital no Samsung Ocean. Formação em Design Gráfico, Especialista em Desenvolvimento de Jogos Digitais pela - Universidade do Estado do Amazonas (UEA) e Mestre em Design de Artefatos digitais pelo C.E.S.A.R.",
+                        en: "Designer with 5 years of experience, participates in games development projects and mobile applications, as well as digital animation and illustration projects at Samsung Ocean. Training in Graphic Design, Specialist in Development of Digital Games by - University of the State of Amazonas (UEA) and Master in Digital Artifacts Design by C.E.S.A.R.",
+                        foto: johnManaus
                     }
                 ]
             },
@@ -361,72 +380,68 @@ export default class Organizers extends React.Component {
     render(){
         const evento = this.getYear();
         return(
-            <div>
-                <Navbar />
-                <main className="container">
-                    <section className="organizers">
-                        <Title titulo={this.language().geral} subtitulo="Game Jam +" />
-                        <div className="organizersContainer">
-                            {evento.geral.map(
-                                item => {
-                                    return  (
-                                        <Card
-                                            modal={window.location.search.replace("?", "") === "2019" ? () => {
-                                                const lang = navigator.language;
-                                                let texto
-                                                if(lang === 'pt-BR' || lang === 'pt'){
-                                                    texto = item.pt
-                                                } else {
-                                                    texto = item.en    
-                                                }
-                                                this.infoModal({modal: {
-                                                    nome: item.nome,
-                                                    texto: texto,
-                                                    foto: item.foto
-                                                }});
-                                            } : null}
-                                            foto={item.foto}
-                                            nome={item.nome}
-                                            texto={this.isPt === true ? item.pt : item.en}
-                                        />  
-                                    );
-                                }
-                            )}
-                        </div>
-                    </section>
-                    <section className="organizers">
-                        <Title titulo={this.language().regional} subtitulo="Game Jam +" />
-                        <div className="organizersContainer">
-                            {evento.regional.map(
-                                item => {
-                                    return  (
-                                        <Card
-                                            modal={window.location.search.replace("?", "") === "2019" ? () => {
-                                                const lang = navigator.language;
-                                                let texto
-                                                if(lang === 'pt-BR' || lang === 'pt'){
-                                                    texto = item.pt
-                                                } else {
-                                                    texto = item.en    
-                                                }
-                                                this.infoModal({modal: {
-                                                    nome: item.nome,
-                                                    texto: texto,
-                                                    foto: item.foto,
-                                                    cidade: item.cidade
-                                                }});
-                                            } : null}
-                                            foto={item.foto}
-                                            cidade={item.cidade}
-                                            nome={item.nome}
-                                            texto={this.isPt === true ? item.pt : item.en}
-                                        />  );
-                                }
-                            )}
-                        </div>
-                    </section>
-                </main>
-                <Footer />
+            <main>
+                <section className="organizers container">
+                    <Title titulo={this.language().geral} subtitulo="Game Jam +" />
+                    <div className="organizersContainer">
+                        {evento.geral.map(
+                            item => {
+                                return  (
+                                    <Card
+                                        modal={window.location.search.replace("?", "") === "2019" ? () => {
+                                            const lang = navigator.language;
+                                            let texto
+                                            if(lang === 'pt-BR' || lang === 'pt'){
+                                                texto = item.pt
+                                            } else {
+                                                texto = item.en    
+                                            }
+                                            this.infoModal({modal: {
+                                                nome: item.nome,
+                                                texto: texto,
+                                                foto: item.foto
+                                            }});
+                                        } : null}
+                                        foto={item.foto}
+                                        nome={item.nome}
+                                        texto={this.isPt === true ? item.pt : item.en}
+                                    />  
+                                );
+                            }
+                        )}
+                    </div>
+                </section>
+                <section className="organizers container">
+                    <Title titulo={this.language().regional} subtitulo="Game Jam +" />
+                    <div className="organizersContainer">
+                        {evento.regional.map(
+                            item => {
+                                return  (
+                                    <Card
+                                        modal={window.location.search.replace("?", "") === "2019" ? () => {
+                                            const lang = navigator.language;
+                                            let texto
+                                            if(lang === 'pt-BR' || lang === 'pt'){
+                                                texto = item.pt
+                                            } else {
+                                                texto = item.en    
+                                            }
+                                            this.infoModal({modal: {
+                                                nome: item.nome,
+                                                texto: texto,
+                                                foto: item.foto,
+                                                cidade: item.cidade
+                                            }});
+                                        } : null}
+                                        foto={item.foto}
+                                        cidade={item.cidade}
+                                        nome={item.nome}
+                                        texto={this.isPt === true ? item.pt : item.en}
+                                    />  );
+                            }
+                        )}
+                    </div>
+                </section>
                 <Modal 
                     show={this.state.isOpen}
                     onClose={this.toggleModal}
@@ -435,7 +450,7 @@ export default class Organizers extends React.Component {
                     cidade={this.state.modal.cidade} 
                     texto={this.state.modal.texto} 
                 />
-            </div>
+            </main>
         );
     }
 }
