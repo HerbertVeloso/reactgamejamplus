@@ -6,17 +6,20 @@ import Contact from '../components/Contact';
 import Title from '../helpers/Title';
 import TransparentBox from '../helpers/TransparentBox';
 
-import banner from '../assets/images/banner.jpg';
+import bannerPT from '../assets/images/banner.jpg';
+import bannerEN from '../assets/images/bannerIngles.jpg';
 
 export default class Home extends React.Component {
   constructor(props){
     super(props);
     this.state = {
       pt: {
+        banner: bannerPT,
         edicao: "Edição anterior",
         mapa: "Cidades participantes"
       },
       en: {
+        banner: bannerEN,
         edicao: "Past Edition",
         mapa: "Cities Confirmed"
       }
@@ -24,12 +27,22 @@ export default class Home extends React.Component {
   }
 
   language(){
+    const controle = localStorage.getItem('lingua');
     const lang = navigator.language;
 
-    if(lang === 'pt-BR' || lang === 'pt'){
-      return this.state.pt;
+    if(controle === undefined){
+        if(lang === 'pt-BR' || lang === 'pt'){
+            return this.state.pt;
+        } else {
+            return this.state.en;        
+        }
     } else {
-      return this.state.en;        
+        if(controle === 'pt'){
+            return this.state.pt;
+        } else {
+          console.log(localStorage)
+            return this.state.en; 
+        }
     }
   }
 
@@ -39,7 +52,7 @@ export default class Home extends React.Component {
 
     return (
       <main>
-        <img src={banner} alt="A maior game jam da américa latina" />
+        <img src={this.language().banner} alt="A maior game jam da américa latina" />
         <Countdown date={`${year}-08-02T00:00:00`} />
         <section className="container"  data-aos="fade-right">
           <Title titulo={this.language().edicao} subtitulo="Game Jam +" />
@@ -49,6 +62,9 @@ export default class Home extends React.Component {
             </figure>
           </div>
         </section>
+        <section className="nextEdition">
+          <TransparentBox />
+        </section>
         <section className="container"  data-aos="fade-left">
           <Title titulo={this.language().mapa} subtitulo="Game Jam +" inverse />
           <div className="boxResponsive">
@@ -56,9 +72,6 @@ export default class Home extends React.Component {
               <iframe className="map" title="map" src="https://www.google.com/maps/d/embed?mid=1xkUh8jGF4mpjbBvMZJxHrE5vV5qNkPix" frameBorder="0" allowFullScreen></iframe>
             </figure>
           </div>
-        </section>
-        <section className="nextEdition">
-          <TransparentBox />
         </section>
         <Contact />
       </main>

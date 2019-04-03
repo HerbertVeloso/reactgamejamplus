@@ -9,7 +9,18 @@ export default class Modal extends React.Component {
     }
 
     return (
-        <div className="modal">
+        <div 
+          className="modal" 
+          onLoad={(event) => {
+            document.addEventListener('keydown', (event) => {              
+              if (event.keyCode !== 27) 
+              return;
+
+              this.props.closeModal()
+            })
+          }}
+        >
+          <div className="modal__close" onClick={this.props.closeModal}></div>
           <div className="modal__box">
             <button onClick={this.props.onClose}>&#9747;</button>
             <div className="modal__card">

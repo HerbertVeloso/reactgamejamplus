@@ -116,12 +116,21 @@ export default class FAQ extends React.Component {
       }
     
     language(){
+        const controle = localStorage.getItem('lingua');
         const lang = navigator.language;
-    
-        if(lang === 'pt-BR' || lang === 'pt'){
-          return this.state.pt;
+
+        if(controle === undefined){
+            if(lang === 'pt-BR' || lang === 'pt'){
+                return this.state.pt;
+            } else {
+                return this.state.en;        
+            }
         } else {
-          return this.state.en;        
+            if(controle === 'pt'){
+                return this.state.pt;
+            } else {
+                return this.state.en;        
+            }
         }
     }
 

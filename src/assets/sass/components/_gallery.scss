@@ -1,0 +1,32 @@
+.galeria{
+    margin: 32px 0 96px;
+
+    .slick-slider{
+        .slick-list{
+          align-items: center;
+        }
+
+        .slick-prev{
+            left: 8px;
+            z-index: 5;
+        }
+
+        .slick-next{
+            right: 19px;
+        }
+        .slick-prev:before, .slick-next:before{
+            color: gray;
+            font-size: 32px;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+  }
+
+  @media(max-width: 768px){
+      .galeria{
+          margin-bottom: 64px;
+      }
+  }

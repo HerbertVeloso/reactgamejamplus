@@ -4,11 +4,11 @@ import Etapa from '../components/Etapa';
 
 import Title from '../helpers/Title';
 
-import timeline from '../assets/images/timeline.png';
-import bgGJ from '../assets/images/bgGJ.png';
-import bgVotoPopular from '../assets/images/bgVotoPopular.png';
-import bgAceleracao from '../assets/images/bgAceleracao.png';
-import bgFinal from '../assets/images/bgFinal.png';
+import timeline from '../assets/images/timeline.jpg';
+import bgGJ from '../assets/images/bgGJ.jpg';
+import bgVotoPopular from '../assets/images/bgVotoPopular.jpg';
+import bgAceleracao from '../assets/images/bgAceleracao.jpg';
+import bgFinal from '../assets/images/bgFinal.jpg';
 
 export default class ComoFunciona extends React.Component {
   constructor(props){
@@ -66,12 +66,21 @@ export default class ComoFunciona extends React.Component {
   }
 
   language(){
+    const controle = localStorage.getItem('lingua');
     const lang = navigator.language;
 
-    if(lang === 'pt-BR' || lang === 'pt'){
-      return this.state.pt;
+    if(controle === undefined){
+        if(lang === 'pt-BR' || lang === 'pt'){
+            return this.state.pt;
+        } else {
+            return this.state.en;        
+        }
     } else {
-      return this.state.en;        
+        if(controle === 'pt'){
+            return this.state.pt;
+        } else {
+            return this.state.en;        
+        }
     }
   }
   

@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logoWhite.png';
+import brasil from '../assets/images/brasil.png';
+import usa from '../assets/images/usa.png';
 
 export default class Navbar extends React.Component{
     constructor(props) {
@@ -10,30 +12,54 @@ export default class Navbar extends React.Component{
             pt: {
                 home: "Home",
                 comoFunciona: "Como Funciona?",
+                edicoes: "Edições",
                 organizadores: "Organizadores",
-                faq: "FAQ"
+                faq: "FAQ",
+                linguaImg: usa,
+                lingua: "en"
             },
             en: {
                 home: "Home",
                 comoFunciona: "How it works?",
+                edicoes: "Editions",
                 organizadores: "Organizers",
-                faq: "FAQ"
+                faq: "FAQ",
+                linguaImg: brasil,
+                lingua: "pt"
             }
         }
 
         this.menuMobile = this.menuMobile.bind(this);
         this.scrollSmooth = this.scrollSmooth.bind(this);
         this.removeClass = this.removeClass.bind(this);
+        this.switchLanguage = this.switchLanguage.bind(this);
+    }
+
+    switchLanguage(){
+        const lingua = this.language().lingua;
+        localStorage.setItem('lingua', lingua);
+        window.location.reload()
+        
     }
 
     language(){
+        const controle = localStorage.getItem('lingua');
         const lang = navigator.language;
 
-        if(lang === 'pt-BR' || lang === 'pt'){
-            return this.state.pt;
+        if(controle === undefined){
+            if(lang === 'pt-BR' || lang === 'pt'){
+                return this.state.pt;
+            } else {
+                return this.state.en;        
+            }
         } else {
-            return this.state.en;        
+            if(controle === 'pt'){
+                return this.state.pt;
+            } else {
+                return this.state.en;        
+            }
         }
+    
     }
 
     menuMobile(){
@@ -107,6 +133,19 @@ export default class Navbar extends React.Component{
                         </li>
                         <li>
                             <span className="menu__span">
+                                { this.language().edicoes }
+                            </span>
+                            <ul>
+                                <li>
+                                    <Link to="/edicao?2018" className="menu__link" onClick={this.scrollSmooth}>2018</Link>
+                                </li>
+                                <li>
+                                    <Link to="/edicao?2017" className="menu__link" onClick={this.scrollSmooth}>2017</Link>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span className="menu__span">
                                 { this.language().organizadores }
                             </span>
                             <ul>
@@ -120,6 +159,9 @@ export default class Navbar extends React.Component{
                         </li>
                         <li>
                             <Link to="/faq" className="menu__link"  onClick={this.scrollSmooth}>{ this.language().faq }</Link>
+                        </li>
+                        <li>
+                            <img className="menu__lingua" src={this.language().linguaImg} onClick={this.switchLanguage} />
                         </li>
                     </ul>
                 </nav>

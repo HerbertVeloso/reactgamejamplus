@@ -1,0 +1,43 @@
+.editionGame{
+    height: 380px;
+    margin: 64px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .editionGame__box{
+        background: rgba(130, 70, 100, .7);
+        padding: 20px;
+        transform: skew(-20deg);
+        position: absolute;
+        bottom: -32px;
+        right: -16px;
+    }
+}
+
+@media(max-width: 1024px){
+    .editionGame{
+        margin: 32px 0 64px;
+
+        .editionGame__box{
+            max-width: 90%;
+            left: 0;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .editionGame{
+        height: 180px;
+
+        .title{
+            h2{
+                font-size: 18px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}

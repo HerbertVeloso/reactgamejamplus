@@ -9,7 +9,7 @@ export default class Etapa extends React.Component {
         backgroundSize: "cover",
     };
     return (
-      <section className="etapa" style={style} id={this.props.id}>
+      <section className="etapa" style={style} id={this.props.id}  data-aos="fade-up">
         <div className="container">
             <Title titulo={this.props.titulo} subtitulo={this.props.subtitulo} cor="branco" />
             <p className="etapa__text">{ this.props.texto }</p>

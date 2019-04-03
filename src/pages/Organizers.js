@@ -323,29 +323,48 @@ export default class Organizers extends React.Component {
                 ]
             }
         }
+        this.closeModal = this.closeModal.bind(this)
     }
     componentWillUpdate = () =>  {
         window.scrollTo(0,0);
     }
 
     language(){
+        const controle = localStorage.getItem('lingua');
         const lang = navigator.language;
-    
-        if(lang === 'pt-BR' || lang === 'pt'){
-          return this.state.pt;
+
+        if(controle === undefined){
+            if(lang === 'pt-BR' || lang === 'pt'){
+                return this.state.pt;
+            } else {
+                return this.state.en;        
+            }
         } else {
-          return this.state.en;        
+            if(controle === 'pt'){
+                return this.state.pt;
+            } else {
+                return this.state.en;        
+            }
         }
     }
 
     isPt(){
+        const controle = localStorage.getItem('lingua');
         const lang = navigator.language;
 
-        if(lang === 'pt-BR' || lang === 'pt'){
-            return true;
-          } else {
-            return false;        
-          }
+        if(controle === undefined){
+            if(lang === 'pt-BR' || lang === 'pt'){
+                return true;
+            } else {
+                return false;        
+            }
+        } else {
+            if(controle === 'pt'){
+                return true;
+            } else {
+                return false;        
+            }
+        }
     }
 
     getYear(){
@@ -355,6 +374,9 @@ export default class Organizers extends React.Component {
             return this.state.atual
         } else if (url === "2018") {
             return this.state.passado
+        } else {
+            return this.state.atual
+
         }
     }
 
@@ -362,6 +384,16 @@ export default class Organizers extends React.Component {
         this.setState({
           isOpen: !this.state.isOpen
         });
+    }
+
+    closeModal = () => {
+        this.setState({
+            isOpen: false
+         });
+    }
+
+    newMethod() {
+        return this;
     }
 
     infoModal(props) {
@@ -383,7 +415,7 @@ export default class Organizers extends React.Component {
             <main>
                 <section className="organizers container">
                     <Title titulo={this.language().geral} subtitulo="Game Jam +" />
-                    <div className="organizersContainer">
+                    <div className="organizersContainer" >
                         {evento.geral.map(
                             item => {
                                 return  (
@@ -445,6 +477,7 @@ export default class Organizers extends React.Component {
                 <Modal 
                     show={this.state.isOpen}
                     onClose={this.toggleModal}
+                    closeModal={this.closeModal}
                     foto={this.state.modal.foto} 
                     nome={this.state.modal.nome} 
                     cidade={this.state.modal.cidade} 

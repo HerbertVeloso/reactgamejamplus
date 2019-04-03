@@ -16,6 +16,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      language: null
+    }
+  }
   render() {
     AOS.init();
     return (
@@ -27,7 +33,7 @@ class App extends Component {
             <Route exact path="/comofunciona" component={ComoFunciona} />
             <Route exact path="/organizadores" component={Organizers} />
             <Route exact path="/faq" component={FAQ} />
-            {/* <Route exact path="/edicoes" component={Edicoes} /> */}
+            <Route exact path="/edicao" component={Edicoes} />
             <Route path='/' component={NotFound} />
           </Switch>
           <Footer />

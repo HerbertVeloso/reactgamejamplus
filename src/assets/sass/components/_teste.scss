@@ -31,6 +31,12 @@
                 margin: 0 8px;
                 float: left;
 
+                img{
+                    width: 25px;
+                    margin: 12px 0;
+                    cursor: pointer;
+                }
+
                 .menu__span{
                     padding: 12px 0;
                     background: $azul;
@@ -115,6 +121,9 @@
     }
 }
 @media(max-width: 768px){
+    .menu__lingua{
+       align-self: center;
+    }
     .teste{
         .container{
             .teste__toggle{
@@ -224,8 +233,13 @@
             }
         }
          ul{
-            height: 380px;
+            height: 480px;
             // padding: 24px 0;
         }
     }
+}
+
+.menu__lingua{
+    width: 10px;
+    cursor: pointer;
 }

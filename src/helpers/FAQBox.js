@@ -9,7 +9,7 @@ export default class FAQBox extends React.Component {
             backgroundSize: "cover",
         };
         return(
-            <section className="faqBox">
+            <section className="faqBox"  data-aos="fade-up">
                 <div className="container">
                     <Title titulo={this.props.titulo} subtitulo={this.props.subtitulo} />
                 </div>
