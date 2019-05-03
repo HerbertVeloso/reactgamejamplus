@@ -14,6 +14,7 @@ export default class Navbar extends React.Component{
                 comoFunciona: "Como Funciona?",
                 edicoes: "Edições",
                 organizadores: "Organizadores",
+                empresa: "Conquistas",
                 faq: "FAQ",
                 linguaImg: usa,
                 lingua: "en"
@@ -23,6 +24,7 @@ export default class Navbar extends React.Component{
                 comoFunciona: "How it works?",
                 edicoes: "Editions",
                 organizadores: "Organizers",
+                empresa: "Achievements",
                 faq: "FAQ",
                 linguaImg: brasil,
                 lingua: "pt"
@@ -38,7 +40,8 @@ export default class Navbar extends React.Component{
     switchLanguage(){
         const lingua = this.language().lingua;
         localStorage.setItem('lingua', lingua);
-        window.location.reload()
+        // window.location.reload()
+        window.location.href = "/";
         
     }
 
@@ -156,6 +159,9 @@ export default class Navbar extends React.Component{
                                     <Link to="/organizadores?2018" className="menu__link" onClick={this.scrollSmooth}>2018</Link>
                                 </li>
                             </ul>
+                        </li>
+                        <li>
+                            <Link to="/conquistas" className="menu__link"  onClick={this.scrollSmooth}>{ this.language().empresa }</Link>
                         </li>
                         <li>
                             <Link to="/faq" className="menu__link"  onClick={this.scrollSmooth}>{ this.language().faq }</Link>

@@ -1,0 +1,39 @@
+.news{
+    width: 360px;
+    border: 2px solid #58808a;
+    padding: 10px;
+    margin: 15px 20px;
+
+    div{
+        height: 100%;
+        padding: 15px;
+        border: 2px solid #001e3c;
+        color: $azul;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        img{
+            width: 30%;
+        }
+
+        h3{
+            font-family: $fontBold;
+            font-size: 12px;
+        }
+
+        p{
+            margin: 16px 0;
+            font-family: $quick;
+            font-size: 12px;
+        }
+
+        h4{
+            margin: 0 20px;
+            font-family: $fontBold;
+            font-size: 12px;
+        }
+    }
+}

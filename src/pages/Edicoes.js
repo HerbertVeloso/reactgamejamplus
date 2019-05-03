@@ -25,14 +25,23 @@ import f03 from '../assets/images/edicoes/2018/03.jpg';
 import f04 from '../assets/images/edicoes/2018/04.jpg';
 import f05 from '../assets/images/edicoes/2018/05.jpg';
 import f06 from '../assets/images/edicoes/2018/06.jpg';
-import f07 from '../assets/images/edicoes/2018/07.png';
-import f08 from '../assets/images/edicoes/2018/08.png';
-import f09 from '../assets/images/edicoes/2018/09.png';
+import f07 from '../assets/images/edicoes/2018/07.jpg';
+import f08 from '../assets/images/edicoes/2018/08.jpg';
+import f09 from '../assets/images/edicoes/2018/09.jpg';
 import f10 from '../assets/images/edicoes/2018/10.jpg';
 import f11 from '../assets/images/edicoes/2018/11.jpg';
 import f12 from '../assets/images/edicoes/2018/12.jpg';
 import f13 from '../assets/images/edicoes/2018/13.jpg';
 import f14 from '../assets/images/edicoes/2018/14.jpg';
+import f15 from '../assets/images/edicoes/2018/15.jpg';
+import f16 from '../assets/images/edicoes/2018/16.jpg';
+import f17 from '../assets/images/edicoes/2018/17.jpg';
+import f18 from '../assets/images/edicoes/2018/18.jpg';
+import f19 from '../assets/images/edicoes/2018/19.jpg';
+import f20 from '../assets/images/edicoes/2018/20.jpg';
+import f21 from '../assets/images/edicoes/2018/21.jpg';
+import f22 from '../assets/images/edicoes/2018/22.jpg';
+import f23 from '../assets/images/edicoes/2018/23.jpg';
 
 // Premios 2017
 import sowrdOfYohn from "../assets/images/edicoes/2017/SwordOfYohn.jpg";
@@ -54,6 +63,10 @@ import a11 from '../assets/images/edicoes/2017/11.jpg';
 import a12 from '../assets/images/edicoes/2017/12.jpg';
 import a13 from '../assets/images/edicoes/2017/13.jpg';
 import a14 from '../assets/images/edicoes/2017/14.jpg';
+import a15 from '../assets/images/edicoes/2017/15.jpg';
+import a16 from '../assets/images/edicoes/2017/16.jpg';
+import a17 from '../assets/images/edicoes/2017/17.jpg';
+import a18 from '../assets/images/edicoes/2017/18.jpg';
 
 
 
@@ -66,63 +79,88 @@ export default class Card extends React.Component {
                 ano: "2018",
                 fotos: [
                     {
-                        src: f01,
-                        thumbnail: f01,
-                        thumbnailHeight: 100
+                        src: f01
                     }, {
-                        src: f02,
-                        thumbnail: f02,
-                        thumbnailHeight: 100
+                        src: f02
                     }, {
-                        src: f03,
-                        thumbnail: f03,
-                        thumbnailHeight: 100
+                        src: f03
                     }, {
-                        src: f04,
-                        thumbnail: f04,
-                        thumbnailHeight: 100
+                        src: f04
                     }, {
-                        src: f05,
-                        thumbnail: f05,
-                        thumbnailHeight: 100
+                        src: f05
                     }, {
                         src: f06,
                         thumbnail: f06,
                         thumbnailHeight: 100
+                    }, {
+                        src: f07,
+                        thumbnail: f07,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f08,
+                        thumbnail: f08,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f09,
+                        thumbnail: f09,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f10,
+                        thumbnail: f10,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f11,
+                        thumbnail: f11,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f12,
+                        thumbnail: f12,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f13,
+                        thumbnail: f13,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f14,
+                        thumbnail: f14,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f15,
+                        thumbnail: f13,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f16,
+                        thumbnail: f13,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f17,
+                        thumbnail: f13,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f18,
+                        thumbnail: f13,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f19,
+                        thumbnail: f13,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f20,
+                        thumbnail: f13,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f21,
+                        thumbnail: f13,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f22,
+                        thumbnail: f13,
+                        thumbnailHeight: 100
+                    }, {
+                        src: f23,
+                        thumbnail: f13,
+                        thumbnailHeight: 100
                     }
-                    // }, {
-                    //     src: f07,
-                    //     thumbnail: f07,
-                    //     thumbnailHeight: 100
-                    // }, {
-                    //     src: f08,
-                    //     thumbnail: f08,
-                    //     thumbnailHeight: 100
-                    // }, {
-                    //     src: f09,
-                    //     thumbnail: f09,
-                    //     thumbnailHeight: 100
-                    // }, {
-                    //     src: f10,
-                    //     thumbnail: f10,
-                    //     thumbnailHeight: 100
-                    // }, {
-                    //     src: f11,
-                    //     thumbnail: f11,
-                    //     thumbnailHeight: 100
-                    // }, {
-                    //     src: f12,
-                    //     thumbnail: f12,
-                    //     thumbnailHeight: 100
-                    // }, {
-                    //     src: f13,
-                    //     thumbnail: f13,
-                    //     thumbnailHeight: 100
-                    // }, {
-                    //     src: f14,
-                    //     thumbnail: f14,
-                    //     thumbnailHeight: 100
-                    // }
                 ],
                 premios: [
                     {
@@ -175,32 +213,43 @@ export default class Card extends React.Component {
                     }, {
                         src: a06,
                         thumbnail: a06
+                    }, {
+                        src: a07,
+                        thumbnail: a07
+                    }, {
+                        src: a08,
+                        thumbnail: a08
+                    }, {
+                        src: a09,
+                        thumbnail: a09
+                    }, {
+                        src: a10,
+                        thumbnail: a10
+                    }, {
+                        src: a11,
+                        thumbnail: a11
+                    }, {
+                        src: a12,
+                        thumbnail: a12
+                    }, {
+                        src: a13,
+                        thumbnail: a13
+                    }, {
+                        src: a14,
+                        thumbnail: a14
+                    }, {
+                        src: a15,
+                        thumbnail: a15
+                    }, {
+                        src: a16,
+                        thumbnail: a16
+                    }, {
+                        src: a17,
+                        thumbnail: a17
+                    }, {
+                        src: a18,
+                        thumbnail: a18
                     }
-                    // }, {
-                    //     src: a07,
-                    //     thumbnail: a07
-                    // }, {
-                    //     src: a08,
-                    //     thumbnail: a08
-                    // }, {
-                    //     src: a09,
-                    //     thumbnail: a09
-                    // }, {
-                    //     src: a10,
-                    //     thumbnail: a10
-                    // }, {
-                    //     src: a11,
-                    //     thumbnail: a11
-                    // }, {
-                    //     src: a12,
-                    //     thumbnail: a12
-                    // }, {
-                    //     src: a13,
-                    //     thumbnail: a13
-                    // }, {
-                    //     src: a14,
-                    //     thumbnail: a14
-                    // }
                 ],
                 premios: [
                     {

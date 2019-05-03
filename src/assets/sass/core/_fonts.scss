@@ -10,5 +10,19 @@
     src: url('../fonts/Panton-LightCaps.otf') format("opentype");
 }
 
+@font-face{
+    font-family: 'Quicksand';
+    font-style: normal;
+    src: url('../fonts/Quicksand.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'PassionOne';
+    font-style: normal;
+    src: url('../fonts/PassionOne.ttf') format('truetype');
+}
+
 $fontBold: 'Panton-Black';
 $fontLight: 'Panton-Light';
+$quick: 'Quicksand';
+$aspas: 'PassionOne';

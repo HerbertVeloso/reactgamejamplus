@@ -9,7 +9,7 @@ export default class Card extends React.Component {
                 <img src={this.props.foto} alt="" />
                 <Title 
                     titulo={this.props.nome} 
-                    subtitulo={this.props.cidade === undefined ? "Geral" : this.props.cidade}
+                    subtitulo={this.props.cidade === undefined ? "Global" : this.props.cidade}
                 />
             </div>
         );

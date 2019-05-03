@@ -40,6 +40,9 @@ import anayaSaoCarlos from '../assets/images/organizadores/2019/AnayaSaoCarlos.j
 import kidManaus from '../assets/images/organizadores/2019/KidManaus.jpg'
 import carlosManaus from '../assets/images/organizadores/2019/CarlosManaus.jpg'
 import johnManaus from '../assets/images/organizadores/2019/JohnManaus.jpg'
+import hugoPorto from '../assets/images/organizadores/2019/HugoPorto.jpg'
+import ronica from '../assets/images/organizadores/2019/Ronica.jpg'
+import miguelLaPaz from '../assets/images/organizadores/2019/MiguelLaPaz.png'
 
 //Fotos Regional 2018
 import pedrozambon from '../assets/images/organizadores/2018/pedro.jpg'
@@ -62,11 +65,11 @@ export default class Organizers extends React.Component {
                 foto: ""
             },
             pt: {
-                geral: "Organização Geral",
+                geral: "Organização Global",
                 regional: "Organização Regional"
             },
             en: {
-                geral: "General Organizers",
+                geral: "Global Organizers",
                 regional: "Regional Organizers"
             },
             atual: {
@@ -100,6 +103,24 @@ export default class Organizers extends React.Component {
                         pt: "Nascido em Minas Gerais, Jairo Lopes que hoje mora em Dublin, Irlanda é CEO e Diretor de Negócios da Nocht Communications, uma empresa que fornece serviços de Desenvolvimento de Negócios, Relações Públicas e Marketing para a Indústria de Jogos. Jairo começou sua carreira em 2014 como desenvolvedor e logo se encontrou em negócios e comunicação, onde desde então tem trabalhado em vários jogos como Madcap Castle, Eliosis Hunt, LazerGrrl, PSG Football Freestyle e outros. Por causa de seu apego e entusiasmo por comunidades, foi um dos idealizadores do evento BH Game Biz no Brasil e a The Games Co-Op em Dublin. Também participou da criação da GAMING (Associação Mineira de Jogos), onde foi responsável pela assessoria de imprensa. Jairo também escreve sobre marketing e negócios para o site Industria de Jogos.",
                         en: "Jairo Lopes was born in Brazil and is currently living in Dublin. He is the CEO and Business Director of Nocht Communications, a company that provides Business Development, Public Relations and Marketing services for the Games Industry. Jairo started his career as a developer and shortly found himself doing business and communications. Since then, he has worked on multiple games such as Madcap Castle, Eliosi's Hunt, LazerGrrl, PSG Football Freestyle and many others. Because of his indie-community side, he has always been present, organising events as BH Game Biz and The Games Co-OP and also participating of the foundation of the Game Association in Minas Gerais (GAMING) which he was also the responsible for press communications. Jairo also writes about marketing and business subjects for Industria de Jogos.",
                         foto: jairo
+                    }, {
+                        nome: "Ronica Singh",
+                        cidade: "Durban",
+                        pt: 'I wanted to go into the field of Astronomy and Electronics, but Computer Science chose me.  Studied correspondently and graduated with a BSc degree in Computer Science and Information Systems with University of South Africa (UNISA) in 2014, while working full time.  Web development caught my interest and still continue to do so.  While working as a IT lecturer for a short time of 2 years, I found that teaching others about web development and game development is something I truly want to do.  Currently in the process of starting my online training system under the name of "LearnWebAnim".  Occasionally a Career/Student advisor. I have developed a few games over the years, some for the JS13Kgames.com competition.  I follow many of the local game competitions and now recently the game jams.  I like not just making games but also teaching to make games, both developing and design of games.',
+                        en: 'I wanted to go into the field of Astronomy and Electronics, but Computer Science chose me.  Studied correspondently and graduated with a BSc degree in Computer Science and Information Systems with University of South Africa (UNISA) in 2014, while working full time.  Web development caught my interest and still continue to do so.  While working as a IT lecturer for a short time of 2 years, I found that teaching others about web development and game development is something I truly want to do.  Currently in the process of starting my online training system under the name of "LearnWebAnim".  Occasionally a Career/Student advisor. I have developed a few games over the years, some for the JS13Kgames.com competition.  I follow many of the local game competitions and now recently the game jams.  I like not just making games but also teaching to make games, both developing and design of games.',
+                        foto: ronica
+                    }, {
+                        nome: "Hugo",
+                        cidade: "Porto",
+                        pt: "Natural de Vila do Conde, Hugo vai coordenar a organização da Game Jam+ Porto, ele já tem uma vasta experiência em coodenação de game jams, visto ser o organizador de uma das mais consagradas game jams Portuguesas, a MAD Game Jam. Fora disto Hugo tem um curso superior em Design de Jogos e Animação Digital.",
+                        en: "Natural de Vila do Conde, Hugo vai coordenar a organização da Game Jam+ Porto, ele já tem uma vasta experiência em coodenação de game jams, visto ser o organizador de uma das mais consagradas game jams Portuguesas, a MAD Game Jam. Fora disto Hugo tem um curso superior em Design de Jogos e Animação Digital.",
+                        foto: hugoPorto
+                    }, {
+                        nome: "Miguel Velasco",
+                        cidade: "La Paz",
+                        pt: "Miguel Velasco is a graphic designer and visual communicator from La Paz, Bolivia, specialized in UI and UX. He has worked in the video game industry since 2012, he's founder of the Untamed Fox Studio in which the last years has focused his career to the game and experiences design. The 2019 has been co-organizer of the Global Game Jam - La Paz, Bolivia. Now works as a Creative Director at VReality company and is part of the board of the ABV, Asociación Boliviana de Videojuegos (Bolivian Videogames Association) as a International Relations and Coordination.",
+                        en: "Miguel Velasco is a graphic designer and visual communicator from La Paz, Bolivia, specialized in UI and UX. He has worked in the video game industry since 2012, he's founder of the Untamed Fox Studio in which the last years has focused his career to the game and experiences design. The 2019 has been co-organizer of the Global Game Jam - La Paz, Bolivia. Now works as a Creative Director at VReality company and is part of the board of the ABV, Asociación Boliviana de Videojuegos (Bolivian Videogames Association) as a International Relations and Coordination.",
+                        foto: miguelLaPaz
                     }, {
                         nome: "José Nunes",
                         cidade: "São Luís",
